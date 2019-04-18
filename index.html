@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Subscription Prices</title>
+
+
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <div id="monthly-pricing-table" class="monthly-pricing-table yearly">
+
+    <div class="column growth">
+      <section class="price-container">
+        <h3>Budget</h3>
+        <p class="price monthly">120</p>
+        <p class="price yearly">100</p>
+        <div class="toggle-container">
+          <span class="toggle-btn yearly">yearly</span>
+          <span class="toggle"></span>
+          <span class="toggle-btn monthly">monthly</span>
+        </div>
+        <div>
+          <button class="scheduler-trigger">Schedule a Demo</button>
+          <button class="phone-trigger">Call Now</button>
+        </div>
+      </section>
+      <section class="user-details">
+        <ul>
+          <li>1 thing</li>
+        </ul>
+      </section>
+      <section class="included-features">
+        <ul>
+          <li>Unlimited Fizz</li>
+          <li>Unlimited Buzz</li>
+        </ul>
+      </section>
+      <section class="support-tier">
+        <ul>
+          <li>Fancy thing</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="column pro popular">
+      <section class="price-container">
+        <h3>Pro</h3>
+        <p class="price monthly">240</p>
+        <p class="price yearly">200</p>
+        <div class="toggle-container">
+          <span class="toggle-btn yearly">yearly</span>
+          <span class="toggle"></span>
+          <span class="toggle-btn monthly">monthly</span>
+        </div>
+        <div>
+          <button class="scheduler-trigger">Schedule a Demo</button>
+          <button class="phone-trigger">Call Now</button>
+        </div>
+      </section>
+      <section class="user-details">
+        <ul>
+          <li>2 things</li>
+        </ul>
+      </section>
+      <section class="included-features">
+        <ul>
+          <li>Unlimited Fizz</li>
+          <li>Unlimited Buzz</li>
+          <li>Unlimited Baz</li>
+        </ul>
+      </section>
+      <section class="support-tier">
+        <ul>
+          <li>Fancy thing</li>
+          <li>Extra shiny thing</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="column enterprise">
+      <section class="price-container">
+        <h3>Enterprise</h3>
+        <p class="price monthly">480</p>
+        <p class="price yearly">400</p>
+        <div class="toggle-container">
+          <span class="toggle-btn yearly">yearly</span>
+          <span class="toggle"></span>
+          <span class="toggle-btn monthly">monthly</span>
+        </div>
+        <div>
+          <button class="scheduler-trigger">Schedule a Demo</button>
+          <button class="phone-trigger">Call Now</button>
+        </div>
+      </section>
+      <section class="user-details">
+        <ul>
+          <li>3 things</li>
+        </ul>
+      </section>
+      <section class="included-features">
+        <ul>
+          <li>Unlimited Fizz</li>
+          <li>Unlimited Buzz</li>
+          <li>Unlimited Baz</li>
+          <li>Unlimited Foo</li>
+        </ul>
+      </section>
+      <section class="support-tier">
+        <ul>
+          <li>Fancy thing</li>
+          <li>Extra shiny thing</li>
+          <li>You want this thing</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.toggle-container').forEach(el => {
+      el.addEventListener('touchend', function(e){
+        e.preventDefault();
+        document.getElementById('monthly-pricing-table').classList.toggle('yearly');
+      });
+      el.addEventListener('click', function(){
+        document.getElementById('monthly-pricing-table').classList.toggle('yearly');
+      });
+    });
+  </script>
+</body>
+
+</html>
